@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import Login from './components/Login.jsx'
+import Forget from './components/Forget.jsx'
 import './App.css'
 
 function App() {
@@ -9,6 +9,8 @@ function App() {
   return (
     <>
     <Login />
+    <Forget />
+
     </>
   )
 }

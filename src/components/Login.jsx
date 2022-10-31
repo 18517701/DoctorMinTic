@@ -3,32 +3,76 @@ function Login () {
     return(
 
         
-        <body class="text-center">
-            
-                <form>
-                    <img class="mb-4" src="https://st.depositphotos.com/1003492/3320/v/600/depositphotos_33208581-stock-illustration-medical-symbol.jpg" alt="" width="160" height="180"></img>
-                    <h1 class="h3 mb-3 fw-normal">Ingresa</h1>
+<body>
+  <div className="container">
+<div class="login-box">
+  <div class="login-logo">
+    <a href="./forget.jsx"><b>CITAS </b>MEDICAS</a>
+  </div>
+  
+  <div className="card">
+    <div class="card-body login-card-body">
+      <p class="login-box-msg">Inicia sesion </p>
+ 
+      <form action="../../index3.html" method="post">
+        <div className="input-group mb-3">
+          <input type="email" class="form-control" placeholder="Email"></input>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div className="input-group mb-3">
+          <input type="password" class="form-control" placeholder="Password"></input>
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div class="col-8">
+            <div class="icheck-primary">
+              <input type="checkbox" id="remember"></input>
+              <label for="remember">
+                Recuerdame
+              </label>
+            </div>
+          </div>
+          
+          <div className="col-4">
+            <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+          </div>
+          
+        </div>
+      </form>
+
+      <div className="social-auth-links text-center mb-3">
+        <p>- O -</p>
+        <a href="#" class="btn btn-block btn-primary">
+          <i class="fab fa-facebook mr-2"></i> Entrar usando Facebook
+        </a>
+        <a href="#" class="btn btn-block btn-danger">
+          <i class="fab fa-google-plus mr-2"></i> Entrar usando Google+
+        </a>
+      </div>
+   
+
+      <p class="mb-1">
         
-                    <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="correo@correo.com"></input>
-                        <label for="floatingInput">Correo electronico</label>
-                    </div>
-                    <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password"></input>
-                        <label for="floatingPassword">Contraseña</label>
-                    </div>
-        
-                    <div class="checkbox mb-3">
-                        <label>
-                            <input type="checkbox" value="remember-me"></input> Recordarme
-                        </label>
-                    </div>
-                    <button class="w-100 btn btn-lg btn-dark" type="submit">Entrar</button>
-                    <p class="mt-5 mb-3 text-muted">&copy; 2021–2022</p>
-                </form>
-            
+        <a href="./Forget.jsx">Olvide mi contraseña</a>
+      </p>
+      <p class="mb-0">
+        <a href="register.html" className="text-center">Registrarme</a>
+      </p>
+    </div>
+  
+  </div>
+  </div>
+  </div>
         </body>
-        
+         
     )
     
 }
