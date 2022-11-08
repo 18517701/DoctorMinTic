@@ -1,3 +1,13 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+
+}
+
 body{
   background-image: url(../src/assets/61802.jpg);
   background-size: cover;

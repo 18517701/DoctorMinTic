@@ -1,20 +1,20 @@
+import { Link } from "react-router-dom";
 
 function Login () {
     return(
-
         
 <body>
   <div className="container">
 <div class="login-box">
   <div class="login-logo">
-    <a href="./forget.jsx"><b>CITAS </b>MEDICAS</a>
+    <a href="#"><b>CITAS </b>MEDICAS</a>
   </div>
   
   <div className="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Inicia sesion </p>
  
-      <form action="../../index3.html" method="post">
+      <form action="../../index3.html" method="post" >
         <div className="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email"></input>
           <div class="input-group-append">
@@ -43,6 +43,7 @@ function Login () {
           
           <div className="col-4">
             <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+          
           </div>
           
         </div>
@@ -60,11 +61,12 @@ function Login () {
    
 
       <p class="mb-1">
-        
-        <a href="./Forget.jsx">Olvide mi contraseña</a>
+        <Link
+        className= 'block text-center my-4'to="forget">Olvide mi contraseña</Link>
       </p>
       <p class="mb-0">
-        <a href="register.html" className="text-center">Registrarme</a>
+        <Link
+        className='block text-center my-4' to ="registrar">Registrarme</Link>
       </p>
     </div>
   
